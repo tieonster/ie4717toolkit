@@ -1,0 +1,78 @@
+/*
+Colours to use: 
+Davys Grey: #5B5B5B
+Gray Web: #7D7C7A
+Sage: #C9C19F
+Light Goldenrod Yellow: #EDF7D2
+Pale Spring Bud: #EDF7B5
+*/
+
+body {
+    background-color: #C9C19F;
+}
+
+
+#wrapper { background-color: #E2D1B2; 
+    color: #000066;
+    width: 80%;
+        margin: auto;
+    min-width:850px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5B5B5B;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #7D7C7A;
+}
+
+.container{
+    width: 100%
+}
+
+.leftColumn { float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.rightColumn { 
+    float: right;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#cleardiv {
+    clear: both
+}
+
+.profilePic {
+    height: 200px;
+    width: 200px;
+}
