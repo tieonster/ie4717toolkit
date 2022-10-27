@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>
+        ToolKit - Home
+    </title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="validator_functions.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <div id="wrapper"> </div>
+    <header id="header"> 
+        <img id="logo" src="./images/toolkitLogo.png"/>
+        <div> <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">Cart</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+              </ul>
+          </nav> </div>  
+    </header>
+    <div class="container">
+        <h1 style="text-align:center"><font size="+5"><b>Any Queries or Feedback? Contact Us</b></font></h1>
+    </div>
+    <div class="container">
+        <h3 style="text-align:center">We are not responsible for any injuries caused by the tools that you rented.</h3>
+
+            <div id="productcontainer">
+        <form class="form" action="post_contact_form.php" method="post">
+            <br>
+            <label> &nbsp; *Name: &nbsp; &nbsp; </label> <input class="input-text" type="text" name="CName" id="custName" size=30 required placeholder = "Enter your name here"><br><br>
+            <label> &nbsp; *Email: &nbsp; &nbsp; </label><input class="input-text" type="text" name="CEmail" id="custEmail" size=30 required placeholder = "Enter your Email-ID here"><br><br>
+            <label> &nbsp; *Contact No: &nbsp; &nbsp; </label><input class="input-text" type="text" name="CNumber" id="custNumber" size=30 required placeholder = "Enter your Mobile Number here"><br><br>
+            <label> &nbsp; *Comments: <textarea type="textarea" name="comments" id="custComments" rows="3" cols="40"></textarea></label><br><br>
+            <label> &nbsp; Order ID:  <input type="text" name="COrder" id="custOrder"></label><br><br >
+           
+        
+        <div>
+            <input type="reset" class="button" value="Clear" style="position:relative; left: 30px; bottom:0px;">
+            <input type="submit" class="button" value="Submit" style="position:relative; left: 60px; bottom:0px;">
+        </div>
+        </form>
+        <br>
+            </div>
+
+        <script type = "text/javascript"  src = "validator_checker2.js" ></script>
+    </div>
+
+
+
+
+</body>
+
+</html>

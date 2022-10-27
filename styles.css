@@ -1,0 +1,292 @@
+/*
+Colours to use: 
+Davys Grey: #5B5B5B
+Gray Web: #7D7C7A
+Sage: #C9C19F
+Light Goldenrod Yellow: #EDF7D2
+Pale Spring Bud: #EDF7B5
+*/
+
+body {
+    background-color: #C9C19F;
+}
+
+
+#wrapper { background-color: #E2D1B2; 
+    color: #000066;
+    width: 80%;
+        margin: auto;
+    min-width:850px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5B5B5B;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #7D7C7A;
+}
+
+.container{
+    width: 100%
+}
+
+.leftColumn { float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.rightColumn { 
+    float: right;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+#cleardiv {
+    clear: both
+}
+
+.profilePic {
+    height: 200px;
+    width: 200px;
+}
+
+.catalogpic {
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    border: 5px solid brown;
+    max-width: 100%;
+}
+
+.cart {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  max-width: 100%;
+  border: 3px solid brown;
+}
+
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+
+  }
+
+#productcontainer {
+    border: 5px solid brown;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #bab86c;
+  }
+
+#productselected {
+
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #8a9a5b;
+}
+  
+#scroll-text {
+/* animation properties */
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+
+-moz-animation: my-animation 15s linear infinite;
+-webkit-animation: my-animation 15s linear infinite;
+animation: my-animation 15s linear infinite;
+}
+  
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
+}
+  
+@keyframes my-animation {
+from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+}
+
+div {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+table {
+  table-layout: fixed;
+}
+
+td {
+  word-wrap:break-word;
+  overflow-wrap: break-word;  
+}
+
+.remove_input_text_borders {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #eee;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

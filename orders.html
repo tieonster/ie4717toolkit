@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>
+        ToolKit - Home
+    </title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="validator_functions.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body> 
+    <div id="wrapper"> </div>
+    <header id="header"> 
+        <img id="logo" src="./images/toolkitLogo.png"/>
+        <div> <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">Cart</a></li>
+                <li><a class="active" href="orders.html">My Orders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </nav> </div>  
+    </header>
+    <h1 style="text-align:center"><font size="+5">Your Order</font></h1>
+
+    <div class="container"> 
+    <div id="productcontainer">
+        <form class="form" action="show_orders.php" method="post">
+            <br>
+            <label> &nbsp; *Order ID: &nbsp; &nbsp; </label><input class="input-text" type="text" name="orderid" id="custOrder" size=30 required placeholder = "Enter your order ID"><br><br>
+            
+            <div>
+                <input type="reset" class="button" value="Clear" style="position:relative; left: 30px; bottom:0px;">
+                <input type="submit" class="button" value="Check Order" style="position:relative; left: 60px; bottom:0px;">
+            </div>
+        </form>
+        <br>
+    </div> 
+    <script type = "text/javascript"  src = "validator_checker3.js" ></script>
+    </div>
+
+</body>
+
+</html>
